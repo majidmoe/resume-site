@@ -28,12 +28,12 @@ export default function CVPage() {
                 majidkofia@hotmail.com
               </a>
               <span className="hidden print:inline" aria-hidden>·</span>
-              <a href="https://github.com/majidkofia" style={{ color: "var(--link)" }}>
-                github.com/majidkofia
+              <a href="https://github.com/majidmoe" style={{ color: "var(--link)" }}>
+                github.com/majidmoe
               </a>
               <span className="hidden print:inline" aria-hidden>·</span>
-              <a href="https://linkedin.com/in/majidkofia" style={{ color: "var(--link)" }}>
-                linkedin.com/in/majidkofia
+              <a href="https://www.linkedin.com/in/majid-m-kofia" style={{ color: "var(--link)" }}>
+                linkedin.com/in/majid-m-kofia
               </a>
             </div>
           </header>

@@ -296,7 +296,7 @@ export default function Home() {
                     ),
                   },
                   {
-                    href: "https://github.com/majidkofia",
+                    href: "https://github.com/majidmoe",
                     label: "GitHub",
                     icon: (
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -305,7 +305,7 @@ export default function Home() {
                     ),
                   },
                   {
-                    href: "https://linkedin.com/in/majidkofia",
+                    href: "https://www.linkedin.com/in/majid-m-kofia",
                     label: "LinkedIn",
                     icon: (
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -665,8 +665,8 @@ export default function Home() {
               &copy; {new Date().getFullYear()} Majid Kofia
             </span>
             <div className="flex gap-6">
-              <a href="https://github.com/majidkofia" target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-fg-dim hover:text-accent transition-colors">GitHub</a>
-              <a href="https://linkedin.com/in/majidkofia" target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-fg-dim hover:text-accent transition-colors">LinkedIn</a>
+              <a href="https://github.com/majidmoe" target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-fg-dim hover:text-accent transition-colors">GitHub</a>
+              <a href="https://www.linkedin.com/in/majid-m-kofia" target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-fg-dim hover:text-accent transition-colors">LinkedIn</a>
             </div>
           </div>
         </footer>
