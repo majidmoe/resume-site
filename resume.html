@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Majid Kofia — Resume</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    background: #f0f0f0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    background: #fff;
+    padding: 36pt 38pt 32pt;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.12);
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media print {
+    body { background: none; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      padding: 34pt 36pt 28pt;
+    }
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18pt;
+    padding-bottom: 14pt;
+    border-bottom: 2pt solid #1a1a1a;
+  }
+
+  .header-left h1 {
+    font-size: 26pt;
+    font-weight: 700;
+    letter-spacing: -0.5pt;
+    line-height: 1.1;
+    color: #0d0d0d;
+  }
+
+  .header-left .title {
+    font-size: 11pt;
+    font-weight: 500;
+    color: #b08430;
+    margin-top: 4pt;
+    letter-spacing: 0.3pt;
+  }
+
+  .header-right {
+    text-align: right;
+    font-size: 8.5pt;
+    color: #555;
+    line-height: 1.65;
+    padding-top: 4pt;
+  }
+
+  .header-right a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  /* ── Section ── */
+  .section {
+    margin-bottom: 14pt;
+  }
+
+  .section-title {
+    font-size: 8.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8pt;
+    color: #1a1a1a;
+    margin-bottom: 8pt;
+    padding-bottom: 3pt;
+    border-bottom: 0.75pt solid #d0d0d0;
+  }
+
+  /* ── Summary ── */
+  .summary {
+    font-size: 9.2pt;
+    color: #333;
+    line-height: 1.55;
+  }
+
+  /* ── Skills grid ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 90pt 1fr;
+    gap: 3pt 12pt;
+    font-size: 9pt;
+  }
+
+  .skills-grid .label {
+    font-weight: 600;
+    color: #333;
+    font-size: 8.5pt;
+  }
+
+  .skills-grid .value {
+    color: #444;
+  }
+
+  /* ── Experience / Projects ── */
+  .entry {
+    margin-bottom: 10pt;
+  }
+
+  .entry:last-child {
+    margin-bottom: 0;
+  }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1pt;
+  }
+
+  .entry-header h3 {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #0d0d0d;
+  }
+
+  .entry-header .date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    color: #888;
+    letter-spacing: 0.3pt;
+    white-space: nowrap;
+  }
+
+  .entry-role {
+    font-size: 9pt;
+    color: #b08430;
+    font-weight: 500;
+    margin-bottom: 4pt;
+  }
+
+  .entry-tech {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    color: #777;
+    margin-bottom: 4pt;
+    letter-spacing: 0.2pt;
+  }
+
+  .entry ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .entry li {
+    padding-left: 12pt;
+    position: relative;
+    font-size: 9pt;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1.5pt;
+  }
+
+  .entry li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #bbb;
+    font-size: 8pt;
+  }
+
+  /* ── Two columns ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20pt;
+  }
+
+  /* ── Education row ── */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .edu-row .gpa {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5pt;
+    color: #888;
+  }
+
+  .edu-detail {
+    font-size: 9pt;
+    color: #444;
+    margin-top: 2pt;
+  }
+
+  /* ── Footer ── */
+  .footer-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3pt;
+    background: linear-gradient(90deg, #b08430 0%, #b08430 40%, #e0d5c5 100%);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Majid Kofia</h1>
+      <div class="title">AI Engineer</div>
+    </div>
+    <div class="header-right">
+      majidkofia@hotmail.com<br>
+      +966-505-697420<br>
+      Jeddah, Saudi Arabia<br>
+      <a href="https://github.com/majidkofia">github.com/majidkofia</a><br>
+      <a href="https://linkedin.com/in/majidkofia">linkedin.com/in/majidkofia</a>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <p class="summary">
+      AI Engineer who builds and deploys end-to-end AI-powered applications. Experienced with LLMs (Gemini, LLaMA), RAG pipelines, computer vision (YOLOv8), and full-stack deployment with Docker and cloud infrastructure. Built production systems including a WhatsApp clinical chatbot with function-calling AI, an automated financial intelligence newsletter, and a real-time football analytics platform. Former Aramco Data Intelligence intern.
+    </p>
+  </div>
+
+  <!-- Technical Skills -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <span class="label">Languages</span>
+      <span class="value">Python, TypeScript, JavaScript, SQL</span>
+      <span class="label">AI / ML</span>
+      <span class="value">Gemini API, LLaMA, YOLOv8, TensorFlow, NLP, RAG, pgvector</span>
+      <span class="label">Backend</span>
+      <span class="value">Node.js, Express, Next.js (App Router), REST APIs</span>
+      <span class="label">Data</span>
+      <span class="value">PostgreSQL, Supabase, pandas, data pipelines</span>
+      <span class="label">Infrastructure</span>
+      <span class="value">Docker, n8n workflow automation, Vercel, Linux</span>
+      <span class="label">APIs</span>
+      <span class="value">WhatsApp Business API, Gmail API, OpenAI-compatible endpoints</span>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <h3>ClinicalBot — WhatsApp AI Assistant</h3>
+        <span class="date">2025</span>
+      </div>
+      <div class="entry-tech">Gemini 2.5 Flash · Function Calling · RAG · pgvector · Supabase · n8n · Docker · WhatsApp API</div>
+      <ul>
+        <li>Built a production WhatsApp chatbot for clinical report management using Gemini 2.5 Flash with function calling for zero-hard-coded intent detection</li>
+        <li>Implemented a RAG pipeline with pgvector and Supabase for semantic search across medical document chunks</li>
+        <li>Designed multi-node n8n workflow for message parsing, AI processing, and response routing; deployed as Dockerized microservices</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <h3>Automated Market Intelligence Newsletter</h3>
+        <span class="date">2025</span>
+      </div>
+      <div class="entry-tech">Gemini 2.5 Flash · n8n · RSS/Web Scraping · Gmail API · HTML Email</div>
+      <ul>
+        <li>Built an automated weekly newsletter that scrapes Saudi financial news, classifies articles by portfolio relevance using Gemini AI, and generates analyst-grade equity research summaries</li>
+        <li>AI-driven news classification with seasonal context awareness (Ramadan, Hajj, earnings seasons) to surface indirect market impacts</li>
+        <li>Premium mobile-ready HTML email with live TASI index and Brent crude data; scheduled n8n workflow for end-to-end delivery</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <h3>PDF Rebrander — Automated Document Processing</h3>
+        <span class="date">2025</span>
+      </div>
+      <div class="entry-tech">Gemini Vision API · Express · pdf-lib · Docker</div>
+      <ul>
+        <li>Express microservice using Gemini Vision API to detect branding areas in PDFs and automate overlay generation with pdf-lib</li>
+        <li>Containerized with Docker; integrated into ClinicalBot pipeline for end-to-end document automation</li>
+      </ul>
+    </div>
+
+    <div class="two-col">
+      <div class="entry">
+        <div class="entry-header">
+          <h3>Football Analytics Platform</h3>
+          <span class="date">APR 2025</span>
+        </div>
+        <div class="entry-role">Saudi AI League</div>
+        <div class="entry-tech">YOLOv8 · LLaMA 3 · Streamlit · Python</div>
+        <ul>
+          <li>End-to-end analytics combining YOLOv8 for real-time player/ball detection with LLaMA 3 for tactical insights and automated match reports</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <h3>Player Recommendation System</h3>
+          <span class="date">2024 – 2025</span>
+        </div>
+        <div class="entry-role">Senior Project</div>
+        <div class="entry-tech">Python · Cosine Similarity · pandas</div>
+        <ul>
+          <li>Recommendation engine using cosine similarity on FIFA player attributes to deliver top-5 suggestions with optimized preprocessing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <h3>Aramco</h3>
+        <span class="date">SEP – OCT 2024</span>
+      </div>
+      <div class="entry-role">Data Intelligence Intern</div>
+      <ul>
+        <li>Automated resume processing by building a PDF-to-structured-CSV pipeline, reducing manual data entry time</li>
+        <li>Engineered prompts for LLM-powered HR systems, improving response accuracy for candidate screening</li>
+        <li>Developed unsupervised topic model to cluster and surface key themes from employee feedback data</li>
+        <li>Optimized batch processing workflows with GPU parallelization for faster model inference</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <h3>Microland Limited</h3>
+        <span class="date">JUL – AUG 2024</span>
+      </div>
+      <div class="entry-role">IT Support Engineer</div>
+      <ul>
+        <li>Resolved IT support tickets across multiple departments, managing escalation workflows</li>
+        <li>Configured and imaged PCs with secure enterprise setups; troubleshot network infrastructure including NOC-switch connections</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-row">
+      <div>
+        <strong>Bachelor of Science in Artificial Intelligence</strong> — University of Jeddah
+      </div>
+      <span class="gpa">2020 – 2025 · GPA 3.8/5</span>
+    </div>
+    <div class="edu-detail">
+      Arabic (Native) · English (IELTS 6.5 / B2, British Council, 2025)
+    </div>
+  </div>
+
+  <div class="footer-bar"></div>
+</div>
+</body>
+</html>

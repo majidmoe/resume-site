@@ -1,0 +1,19 @@
+@media print {
+  @page { margin: 0.4in 0.5in; size: A4; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .no-print { display: none !important; }
+  .cv-page { padding: 0 !important; }
+}
+
+.cv-page {
+  --ink: #111;
+  --ink-muted: #444;
+  --ink-dim: #777;
+  --accent: #1a1a1a;
+  --link: #2563eb;
+  --border: #e5e5e5;
+  --bg-tag: #f3f4f6;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
