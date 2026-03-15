@@ -276,8 +276,9 @@ export default function Home() {
             <Reveal delay={0.4}>
               <div className="mt-10 max-w-xl">
                 <p className="text-lg sm:text-xl text-fg-muted leading-relaxed">
-                  I build and deploy end-to-end AI-powered applications —
-                  from WhatsApp chatbots to financial intelligence pipelines.
+                  I design and ship AI-powered products — from concept
+                  to production. Give me a problem and I&apos;ll build
+                  the intelligent system that solves it.
                 </p>
                 <p className="text-sm text-fg-dim mt-3">Jeddah, Saudi Arabia</p>
               </div>
