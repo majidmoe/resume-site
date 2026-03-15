@@ -41,7 +41,7 @@ export default function CVPage() {
           {/* ── Objective ── */}
           <section className="mt-5 mb-6">
             <p className="text-sm leading-relaxed" style={{ color: "var(--ink-muted)" }}>
-              AI engineer with production experience building end-to-end intelligent systems — from WhatsApp chatbots to automated financial intelligence pipelines. Seeking to combine deep technical expertise with venture investing to evaluate and support the next generation of Saudi tech startups.
+              AI engineer who designs and ships production-ready intelligent systems — LLMs, RAG pipelines, computer vision, API integrations, and containerized deployment. Give me a problem and I&apos;ll build the AI product that solves it.
             </p>
           </section>
 
