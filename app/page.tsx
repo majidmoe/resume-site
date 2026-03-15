@@ -353,7 +353,7 @@ export default function Home() {
                       </div>
                       <p className="text-fg-muted text-sm">WhatsApp AI Assistant</p>
                     </div>
-                    <span className="font-mono text-xs text-fg-dim tracking-wider shrink-0">2025</span>
+                    <span className="font-mono text-xs text-fg-dim tracking-wider shrink-0">Feb 2026 –</span>
                   </div>
                   <div className="space-y-3 text-fg-muted text-sm leading-relaxed mb-8 max-w-3xl">
                     <p>
@@ -384,7 +384,7 @@ export default function Home() {
                       </h3>
                       <p className="text-fg-muted text-sm">AI-Powered Financial Brief</p>
                     </div>
-                    <span className="font-mono text-xs text-fg-dim tracking-wider shrink-0">2025</span>
+                    <span className="font-mono text-xs text-fg-dim tracking-wider shrink-0">Feb 2026 –</span>
                   </div>
                   <div className="space-y-3 text-fg-muted text-sm leading-relaxed mb-8 max-w-3xl">
                     <p>
@@ -414,7 +414,7 @@ export default function Home() {
                       <h3 className="text-xl sm:text-2xl font-bold tracking-[-0.02em] mb-1">PDF Rebrander</h3>
                       <p className="text-fg-muted text-sm">Automated Document Processing</p>
                     </div>
-                    <span className="font-mono text-xs text-fg-dim tracking-wider shrink-0">2025</span>
+                    <span className="font-mono text-xs text-fg-dim tracking-wider shrink-0">Feb – Mar 2026</span>
                   </div>
                   <div className="space-y-3 text-fg-muted text-sm leading-relaxed mb-8 max-w-3xl">
                     <p>

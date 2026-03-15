@@ -52,7 +52,7 @@ export default function CVPage() {
             <Project
               name="ClinicalBot"
               subtitle="Production WhatsApp AI Assistant"
-              date="2025"
+              date="Feb 2026 –"
               bullets={[
                 "Built a production WhatsApp chatbot for clinical report management using Gemini 2.5 Flash with function calling for zero-hard-coded intent detection",
                 "Engineered RAG pipeline with pgvector and Supabase for semantic search across medical document chunks",
@@ -63,7 +63,7 @@ export default function CVPage() {
             <Project
               name="Automated Market Intelligence Newsletter"
               subtitle="AI-Powered Saudi Financial Brief"
-              date="2025"
+              date="Feb 2026 –"
               bullets={[
                 "Automated weekly newsletter scraping Saudi financial news from multiple sources, classifying articles by portfolio relevance using Gemini AI",
                 "Built seasonal context awareness (Ramadan, Hajj, earnings seasons) to surface indirect market impacts",
@@ -74,7 +74,7 @@ export default function CVPage() {
             <Project
               name="PDF Rebrander"
               subtitle="Automated Document Processing Microservice"
-              date="2025"
+              date="Feb – Mar 2026"
               bullets={[
                 "Built Express microservice using Gemini Vision API to detect branding areas in PDFs and auto-overlay custom assets with pdf-lib",
                 "Containerized with Docker, integrated into ClinicalBot pipeline for automated clinical report rebranding",
